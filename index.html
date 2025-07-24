@@ -43,9 +43,9 @@
       }
     </style>
   </head>
-  <body class="bg-[#F5F8FF]">
+  <body class="bg-[#F5F8FF] ">
 
-    <header class="max-w-7xl mx-auto container box-border mt-10">
+    <header class="md:max-w-7xl mx-auto  box-border mt-10 w-11/12">
       <nav class="flex justify-between items-center">
         <div>
           <img src="./assets/logo.png" alt="" />
@@ -63,24 +63,25 @@
         </div>
       </nav>
     </header>
-    <main class="max-w-7xl mx-auto container box-border mt-10">
+    <main class="md:max-w-7xl mx-auto box-border mt-10 w-11/12">
 
       <!-- hero -part  -->
-      <section class=" md:flex mt-20">
-          <div class="md:w-1/2 p-5 space-y-5 content-center">
-              <h1 class="text-4xl md:text-6xl font-bold noto-serif "> <span class="text-[#000000]"> ALWAYAS</span> <span class="text-[#E95A08]">FRESH FLOWERS</span></h1>
-              <p class="inter text-xl md:text-2xl text-[#00000080]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
-          </div>
-          <div class="md:w-1/2 ">
+      <section class=" md:flex flex-row-reverse mt-20">
+        <div class="md:w-1/2 ">
             <img class="w-full" src="./assets/hero-flower.png" alt="">
           </div>
+          <div class="md:w-1/2 p-5 space-y-5 content-center">
+              <h1 class="text-4xl md:text-6xl font-bold noto-serif "> <span class="text-[#000000]"> ALWAYAS</span> <span class="text-[#E95A08]">FRESH FLOWERS</span></h1>
+              <p class="inter md:text-2xl text-[#00000080]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+          </div>
+          
       </section>
 
       <!-- card  -->
-      <section class="mt-20">
+      <section class="md:mt-20">
          <div class="text-center space-y-5">
            <h1 class="text-4xl md:text-5xl font-bold noto-serif "> <span class="text-[#000000]"> Our</span> <span class="text-[#E95A08]">Plants</span></h1>
-           <p class="inter text-xl md:text-2xl text-[#00000080]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br>classic roses to exotic blooms, we offer a wide variety of fresh. </p>
+           <p class="inter md:text-2xl text-[#00000080]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br>classic roses to exotic blooms, we offer a wide variety of fresh. </p>
          </div>
 
          <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-8 p-5">
@@ -139,10 +140,10 @@
 
       <!-- badge-part  -->
       <section class="md:mt-20 md:flex justify-between p-6 items-center">
-        <div class="w-full md:w-1/2 md:relative">
+        <div class="w-full md:w-1/2 md:relative ">
           <img  src="./assets/flower-store.png" alt="">
-          <div class="hidden md:absolute lg:absolute left-1/2 md:top-1/2 translate-x-14 -translate-y-96">
-             <img class="w-72 h-64" src="./assets/trusted-badge.png" alt="">
+          <div class="hidden md:block md:absolute -top-32 -right-10">
+             <img class="w-72 h-72" src="./assets/trusted-badge.png" alt="">
         </div>
         </div>
        
@@ -172,14 +173,14 @@
              <div class="rounded-xl bg-[url('./assets/deal-bloom.png')] bg-no-repeat bg-cover">
                <div class="flex h-[200px] rounded-xl md:h-[200px] flex-col justify-center items-center bg-gradient-to-b from-black/50 to-black/50 ">
                    <h1 class="mt-10 noto-serif text-2xl text-[#FFFFFF]">60% Off | Bloom Plant</h1>
-                   <p class="inter text-xl underline text-[#FFFFFF]">Shop Now</p>
+                   <p class="inter text-xl border-b-2 text-[#FFFFFF]">Shop Now</p>
                 </div>
              </div>
            
              <div class="rounded-xl bg-[url('./assets/deal-ana.png')] bg-no-repeat bg-cover">
               <div class="mb-5 rounded-xl mt-5 h-[200px] md:h-[200px] bg-gradient-to-b from-black/50 to-black/50 flex flex-col justify-center items-center">
                  <h1 class="mt-10 noto-serif text-2xl text-[#FFFFFF]">30% Off | Ana  Plant</h1>
-                <p class="inter text-xl underline text-[#FFFFFF]">Shop Now</p>
+                <p class="inter text-xl border-b-2 text-[#FFFFFF]">Shop Now</p>
               </div>
              </div>
 
@@ -190,7 +191,7 @@
 
                 <div class=" rounded-xl flex flex-col justify-center items-center bg-gradient-to-b from-black/50 to-black/50 h-[200px] md:h-[420px] ">
                    <h1 class="noto-serif font-bold text-3xl text-[#FFFFFF]">25% Off | Zabo Plant</h1>
-                   <p class="inter underline text-xl text-[#FFFFFF]">Shop Now</p>
+                   <p class="inter border-b-2 text-xl text-[#FFFFFF]">Shop Now</p>
                 </div>
             
               </div>
@@ -202,20 +203,20 @@
     </main>
 
     <!-- banner-part  -->
-    <section>
+    <section class="w-11/12 md:w-full mx-auto">
        <div class="bg-[url('./assets/news-letter-bg.png')] bg-cover bg-no-repeat">
         <div class="h-[300px] md:h-[500px] flex justify-center items-center flex-col">
            <h1 class="noto-serif text-2xl md:text-5xl font-bold text-[#FFFFFF]">Join the colorful Bunch</h1>
-           <div class="inter mt-8 ">
-            <input class="text-[#00000080] md:w-[500px] p-3 gap-0 bg-[#FFFFFF]" placeholder="Write email" type="text">
-           <button class="bg-[#E95A08] text-[#FFFFFF] w-36 md:w-48 p-3">Subscribe</button>
+           <div class="inter mt-8  md:w-[700px] flex">
+            <input class="text-[#00000080] w-full p-3 gap-0 bg-[#FFFFFF]" placeholder="Write email" type="text">
+           <button class="bg-[#E95A08] text-[#FFFFFF] w-36 p-3">Subscribe</button>
            </div>
         </div>
       </div>
     </section>
 
-    <footer class="inter max-w-7xl mx-auto container box-border mt-10 bg-[#FFFFFF80]">
-      <div class=" p-3 grid grid-cols-1 md:grid-cols-4 text-[#00000080] gap-5">
+    <footer class="w-11/12 inter md:max-w-7xl mx-auto  mt-10 bg-[#FFFFFF80]">
+      <div class="  grid grid-cols-1 md:grid-cols-4 place-content-between text-[#00000080] gap-5 md:gap-32 mb-5">
          <div class="space-y-4">
           <img src="./assets/logo.png" alt="">
           <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
@@ -230,7 +231,7 @@
           </ul>
          </div>
 
-         <div class="gap-0">
+         <div class="">
           <ul class="space-y-4">
             <li>Features</li>
             <li>Pricing</li>
@@ -239,14 +240,15 @@
             <li>Help Center</li>
           </ul>
          </div>
-         <div class="flex md:justify-center items-center gap-5">
-          <img src="./assets/icon-linkedin.png" alt="">
-          <img src="./assets/icon-twitter.png" alt="">
-          <img src="./assets/icon-facebook.png" alt="">
-          <img src="./assets/icon-youtube.png" alt="">
+         <div class="flex gap-5">
+          <img src="./assets/icon-linkedin.png" alt="" class="w-10 h-10">
+          <img src="./assets/icon-twitter.png" alt="" class="w-10 h-10">
+          <img src="./assets/icon-facebook.png" alt="" class="w-10 h-10">
+          <img src="./assets/icon-youtube.png" alt="" class="w-10 h-10">
          </div>
       </div>
 
     </footer>
+    
   </body>
 </html>
